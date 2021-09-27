@@ -84,6 +84,13 @@ body{
     z-index: 1;
     position: absolute;
     width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 1.5s;
+ 
 }
 
 .img-slider .slide img{
@@ -119,4 +126,8 @@ body{
     margin:0px 0px 40px 15px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.btn.active{
+    background-color: royalblue;
 }
