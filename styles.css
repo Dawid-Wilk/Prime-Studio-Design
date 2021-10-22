@@ -136,7 +136,7 @@ body{
 .oferta{
     width: 100%;
     height: auto;
-    padding: 50px 10vw;
+    padding: 0px 10vw;
 }
 
 .oferta-h1,
@@ -193,7 +193,7 @@ body{
     margin: 10px 0 100px;
     width: 100%;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
     grid-gap: 50px;
 }
 
@@ -206,6 +206,20 @@ body{
 .kontakt-col-left iframe{
     margin-top: 20px;
 }
+
+.icons{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #2c2c2c ;
+}
+
+
 
 .your-name,
 .email{
@@ -275,6 +289,8 @@ body{
     text-decoration: underline;
 }
 
+
+
 @media (max-width:1020px){
     .img-slider{
         width: 900px;
@@ -286,6 +302,14 @@ body{
     .card-holder{
         grid-template-columns: repeat(2, 1fr);
     }
+    .kontakt-col{
+        display: block;
+    }
+    .kontakt-col-left{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
 }
 
 @media (max-width:920px){
@@ -361,4 +385,13 @@ body{
         grid-template-columns: repeat(1, 1fr);      
     }
 
+    .kontakt-col-left iframe{
+        max-width: 350px;
+    }
+}
+
+@media (max-width:440px){
+    .kontakt-col-left iframe{
+        max-width: 250px;
+    }
 }
