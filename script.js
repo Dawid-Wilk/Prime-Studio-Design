@@ -1,3 +1,13 @@
+const toggleBtn = document.querySelector('.toggle-btn');
+const linkContainer = document.querySelector('.navbar-ul');
+
+toggleBtn.addEventListener('click', () => {
+    toggleBtn.classList.toggle('active');
+    linkContainer.classList.toggle('show');
+})
+
+
+
 // navbar-li
 
 const links = document.querySelectorAll('.navbar-li');
